@@ -64,7 +64,7 @@ func New(hosts ...*url.URL) (*RoundRobinReverseProxy, error) {
 	}, nil
 }
 
-// Close closes the proxy and deallocates resources.
+// Close stops the proxy.
 func (p *RoundRobinReverseProxy) Close() {
 	if p.close != nil {
 		p.close <- struct{}{}

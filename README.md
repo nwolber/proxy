@@ -6,7 +6,7 @@ Stateless HTTP load balancer, that distributes requests round robin to the conne
 go install github.com/nwolber/proxy
 ```
 
-####Install library: [Godoc](https://godoc.org/github.com/nwolber/proxy/rrporxy)
+####Install library: [Godoc](https://godoc.org/github.com/nwolber/proxy/rrproxy)
 ```
 go install github.com/nwolber/proxy/rrproxy
 ```
