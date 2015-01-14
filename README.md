@@ -28,4 +28,4 @@ proxy -path /funkyService http://alice/boringService http://bob/boringService
 ####HTTPS
 Listen for HTTPS connections on port 8080 and redirect them to alice and bob.
 ```
-proxy -cert="cert.pem" -key="key.pem" -ep :8080 http://alice http://bob
+proxy -cert cert.pem -key key.pem -ep :8080 http://alice http://bob
