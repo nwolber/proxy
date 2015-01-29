@@ -51,6 +51,7 @@ func TestRoundRobinReverseProxy(t *testing.T) {
 			}
 
 			p, err := New(urls...)
+			defer p.Close()
 
 			if err != nil {
 				t.Errorf("expected NewRoundRobinReverseProxy not to fail, but did so: %s", err)
